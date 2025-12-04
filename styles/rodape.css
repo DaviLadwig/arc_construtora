@@ -1,5 +1,5 @@
 .footer {
-    background: #ff7a00;
+    background: #1a1a1a;
     /* Laranja forte */
     color: #fff;
     padding: 70px 20px 20px;
@@ -51,9 +51,22 @@
     padding-left: 5px;
 }
 
+.footer-call{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-call img{
+    width: 40px;
+}
+
 .footer-socials {
     display: flex;
     gap: 15px;
+}
+
+.footer-socials img{
+    width: 40px;
 }
 
 .footer-socials a {

@@ -29,11 +29,13 @@ REDIRECIONAMENTO DO INDEX PARA A PAGINA PROJETO
   font-size: 1.1rem;
   text-decoration: none;
   transition: 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-btn:hover {
   background: #e85d00;
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+
