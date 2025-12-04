@@ -1,0 +1,87 @@
+.clients-strip {
+    width: 100%;
+    padding: 60px 0;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* Efeito de fade nas laterais */
+.clients-strip::before,
+.clients-strip::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.clients-strip::before {
+    left: 0;
+    background: linear-gradient(to right, #fff, transparent);
+}
+
+.clients-strip::after {
+    right: 0;
+    background: linear-gradient(to left, #fff, transparent);
+}
+
+.strip-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.strip {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.strip img {
+    height: 60px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.strip img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* ANIMAÇÕES */
+
+/* Linha superior → esquerda para direita */
+.strip-top {
+    animation: moveRight 22s linear infinite;
+}
+
+/* Linha inferior → direita para esquerda */
+.strip-bottom {
+    animation: moveLeft 22s linear infinite;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,55 @@
+.diferenciais-section {
+  width: 100%;
+  padding: 80px 6%;
+  background: #ffffff;
+}
+
+.dif-container h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.dif-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.dif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.dif-card {
+  background: #f6f6f6;
+  border-radius: 16px;
+  padding: 35px 25px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  cursor: default;
+}
+
+.dif-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.dif-icon {
+  margin-bottom: 20px;
+}
+
+.dif-card h3 {
+  font-size: 1.3rem;
+  color: #ff6a00;
+  margin-bottom: 15px;
+}
+
+.dif-card p {
+  color: #444;
+  line-height: 1.5;
+}

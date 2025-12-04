@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Obras – ARC Construções</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+            color: #222;
+        }
+
+        /* Hero */
+        .portfolio-hero {
+            width: 100%;
+            padding: 80px 6%;
+            background: linear-gradient(to right, #ff6a00, #ff8d3a);
+            color: #fff;
+            text-align: center;
+        }
+
+        .portfolio-hero h1 {
+            font-size: 2.7rem;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Grid Section */
+        .portfolio-section {
+            padding: 70px 6%;
+        }
+
+        .portfolio-section h2 {
+            font-size: 2rem;
+            color: #222;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            transition: 0.4s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.08);
+            opacity: 0.85;
+        }
+
+        .portfolio-overlay {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 16px;
+            background: rgba(0, 0, 0, 0.55);
+            color: #fff;
+            font-size: 1.1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.3s ease;
+        }
+
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer Simples */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background: #111;
+            color: #eee;
+            margin-top: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="portfolio-hero">
+        <h1>Portfólio de Obras</h1>
+        <p>Conheça alguns dos projetos que representam a qualidade e o compromisso da ARC Construções.</p>
+    </section>
+
+    <!-- RESIDENCIAIS -->
+    <section class="portfolio-section">
+        <h2>Obras Residenciais</h2>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/259597/pexels-photo-259597.jpeg" alt="">
+                <div class="portfolio-overlay">Casa Moderna Térrea</div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="">
+                <div class="portfolio-overlay">Sobrado Contemporâneo</div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="">
+                <div class="portfolio-overlay">Residência de Alto Padrão</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMERCIAIS -->
+    <section class="portfolio-section">
+        <h2>Obras Comerciais</h2>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/2462015/pexels-photo-2462015.jpeg" alt="">
+                <div class="portfolio-overlay">Edifício Corporativo</div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/209298/pexels-photo-209298.jpeg" alt="">
+                <div class="portfolio-overlay">Centro Empresarial</div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg" alt="">
+                <div class="portfolio-overlay">Loja Comercial Premium</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REFORMAS -->
+    <section class="portfolio-section">
+        <h2>Reformas & Ampliações</h2>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg" alt="">
+                <div class="portfolio-overlay">Reforma Residencial Completa</div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/175039/pexels-photo-175039.jpeg" alt="">
+                <div class="portfolio-overlay">Requalificação Comercial</div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="https://images.pexels.com/photos/3990359/pexels-photo-3990359.jpeg" alt="">
+                <div class="portfolio-overlay">Ampliação Estrutural</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        © 2025 ARC Construções — Todos os direitos reservados.
+    </footer>
+
+</body>
+
+</html>

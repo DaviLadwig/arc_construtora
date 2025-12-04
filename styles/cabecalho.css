@@ -1,0 +1,135 @@
+/* ============================
+   HEADER PREMIUM – ARC
+============================ */
+
+:root {
+    --arc-laranja: #E67F1F;
+    --arc-cinza: #6F6F6F;
+    --arc-dark: #111;
+}
+
+/* HEADER CONTAINER */
+.header {
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.header__container {
+    width: 88%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 8px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.header__logo img {
+    width: 200px;
+    object-fit: contain;
+}
+
+/* NAV DESKTOP */
+.header__nav {
+    display: flex;
+    gap: 45px;
+    margin-right: 100px;
+}
+
+.header__nav a {
+    font-size: 1rem;
+    color: var(--arc-dark);
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.header__nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: var(--arc-laranja);
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.header__nav a:hover::after {
+    width: 100%;
+}
+
+/* BOTÃO MENU MOBILE */
+.header__menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.header__menu-btn span {
+    width: 28px;
+    height: 3px;
+    background: var(--arc-dark);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* MENU MOBILE */
+.header__mobile {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 180px;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+}
+
+.header__mobile a {
+    display: block;
+    padding: 12px 0;
+    color: var(--arc-dark);
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.header__mobile a:last-child {
+    border-bottom: none;
+}
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+@media(max-width: 900px) {
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__menu-btn {
+        display: flex;
+    }
+}
+
+/* Animação botão hamburger */
+.header__menu-btn.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.header__menu-btn.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.header__menu-btn.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}

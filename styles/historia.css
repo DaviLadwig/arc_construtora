@@ -1,0 +1,37 @@
+/* SECTION SOBRE A ORIGEM */
+.sobre-origem {
+    background-color: #fff;
+    background-position: left 47%;
+    padding: 100px 8%;
+    color: #1a1a1a;
+}
+
+.sobre-container {
+    max-width: 850px;
+}
+
+.sobre-origem h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.sobre-origem p {
+    line-height: 1.7;
+    font-size: 1.15rem;
+    opacity: 0.9;
+    margin-bottom: 18px;
+}
+
+/* Opcional: animação suave ao rolar */
+.sobre-origem {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s ease;
+}
+
+.sobre-origem.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
