@@ -199,5 +199,3 @@ window.addEventListener('load', animarScroll);
   }
 
 })();
-
-
