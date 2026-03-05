@@ -84,7 +84,8 @@
 
 /* MENU MOBILE */
 .header__mobile {
-    position: absolute;
+    position: relative;
+
     top: 100%;
     right: 0;
     width: 180px;
